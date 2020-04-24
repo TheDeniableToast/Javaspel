@@ -1,16 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 
-/**
- * This is a class
- * Created 2020-03-25
- *
- * @author Magnus Silverdal
- */
+
 public class Graphics extends Canvas implements Runnable {
     private String title = "Graphics";
     private int width;
@@ -90,8 +84,8 @@ public class Graphics extends Canvas implements Runnable {
 
     @Override
     public void run() {
-        double frameUpdateinteval = 10000000.0 / fps;
-        double stateUpdateinteval = 10000000.0 / ups;
+        double frameUpdateinteval = 1000000000.0 / fps;
+        double stateUpdateinteval = 1000000000.0 / ups;
         double deltaFrame = 0;
         double deltaUpdate = 0;
         long lastTime = System.nanoTime();
@@ -115,38 +109,4 @@ public class Graphics extends Canvas implements Runnable {
         stop();
     }
 
-
-    public class MouseMotionEventDemo extends JPanel implements MouseMotionListener {
-
-    blankArea.addMouseMotionListener(this);
-        addMouseMotionListener(this);
-
-        @Override
-        public void mouseDragged(MouseEvent mouseEvent) {
-
-        }
-
-        @Override
-        public void mouseMoved(MouseEvent mouseEvent) {
-
-        }
-        ...
-    }
-
-    public void mouseMoved(MouseEvent e) {
-        saySomething("Mouse moved", e);
-    }
-
-    public void mouseDragged(MouseEvent e) {
-        saySomething("Mouse dragged", e);
-    }
-
-    void saySomething(String eventDescription, MouseEvent e) {
-        textArea.append(eventDescription
-                + " (" + e.getX() + "," + e.getY() + ")"
-                + " detected on "
-                + e.getComponent().getClass().getName()
-                + newline);
-    }
-}
 }
