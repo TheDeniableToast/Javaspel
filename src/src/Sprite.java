@@ -13,15 +13,6 @@ public class Sprite {
         }
     }
 
-    public Sprite2(int w, int h) {
-        this.width = w;
-        this.height = h;
-        pixels = new int[w*h];
-        for (int i = 0 ; i < pixels.length ; i++) {
-            pixels[i] = 0x000000;
-        }
-    }
-
 
     public int[] getPixels() {
         return pixels;
