@@ -20,4 +20,4 @@ Idag har jag inte lagt till något nytt eftersom att jag inte visste vad jag kun
 15/5 - 2020
 Idag var det likadant som igår. Jag har inte lagt till något och det här var sista lektionen för att lägga till saker. Jag ska förklara utförligt i dokumentationen just varför det inte gick så bra för mig på den här uppgiften.
 
-Post-mortem: https://github.com/TheDeniableToast/Javaspel/wiki
+Post-mortem: https://github.com/TheDeniableToast/Javaspel/wiki/Post-mortem
